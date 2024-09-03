@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="nav-cover">
+          <div class="nav-image">
+            <div class="navbar">
+              <div class="navlist">
+                <li><h1>BITLORDS</h1></li>
+                <div class="navlist-seperate">
+                  <li class="border"><a href="onspotreg.html">Onspot counter</a></li>
+                  <li class="border">
+                  <a href="signup.html" target="_blank">Sign Up</a>
+                  </li>
+                  <li class="border">
+                  <a href="login.html" target="_blank">Login</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="nav-search">
+              <div class="search-bar">
+                <input type="text" id="search" placeholder="Search City" />
+              </div>
+              <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <!-- Navbar Cover Page Text -->
+            <div class="location-brief">
+              <div class="location-heading"><p>Prinsep Ghat</p></div>
+              <div class="location-desc">
+                <p>Fort William || Hastings || Kolkata || Free Entry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Filter State and City -->
+    <section>
+      <div class="nav-panel">
+        <div class="nav-panel-options">
+          <!-- State Dropdown -->
+          <div class="dropdown-container">
+            <div class="state dropdown-trigger">
+              State
+              <div class="dropdown-arrow"></div>
+            </div>
+            <ul class="dropdown-menu">
+              <li>West Bengal</li>
+              <li>Delhi</li>
+              <li>Maharashtra</li>
+              <li>Tamil Nadu</li>
+            </ul>
+          </div>
+
+          <!-- City Dropdown -->
+          <div class="dropdown-container">
+            <div class="city dropdown-trigger">
+              City
+              <div class="dropdown-arrow"></div>
+            </div>
+            <ul class="dropdown-menu">
+              <li>Kolkata</li>
+              <li>Mumbai</li>
+              <li>Delhi</li>
+              <li>Chennai</li>
+            </ul>
+          </div>
+
+          <!-- Filter Dropdown -->
+          <div class="dropdown-container">
+            <div class="filter dropdown-trigger">
+              Filter
+              <div class="dropdown-arrow"></div>
+            </div>
+            <ul class="dropdown-menu">
+              <li>Popular</li>
+              <li>Most Visited</li>
+              <li>Historical</li>
+              <li>Nature</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tourist Places -->
+    <section>
+      <div class="tourists-spots1">
+        <div class="tourists-spots1-container">
+          <!-- Place 1 -->
+          <div class="box1">
+            <div class="box1-img"></div>
+            <div class="box1-texts">
+              <div class="place1-heading"><p>Victoria Memorial</p></div>
+              <div class="place1-text">
+                <p>
+                  Famous For: Exemplary architecture <br /><br />
+                  Victoria Memorial Hall 1, Queen's Way, Kolkata
+                  <br /><br />
+                  10 am to 5 pm
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+
+          <!-- Place 2 -->
+          <div class="box2">
+            <div class="box2-img"></div>
+            <div class="box2-texts">
+              <div class="place2-heading"><p>Indian Museum</p></div>
+              <div class="place2-text">
+                <p>
+                  Famous For: Exquisite collections of ornaments, antiques
+                  <br /><br />
+                  27, Jawaharlal Nehru Rd, Dharmatala, Kolkata
+                  <br /><br />10 am to 5 pm
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+          <!-- Place 3 -->
+          <div class="box3">
+            <div class="box3-img"></div>
+            <div class="box3-texts">
+              <div class="place3-heading"><p>Botanical Gardens</p></div>
+              <div class="place3-text">
+                <p>
+                  Famous For: Lush greenery and rich flora <br /><br />
+                  Shibpur, Howrah, West Bengal
+                  <br /><br />Open all day
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup-overlay" class="popup-overlay">
+      <div class="popup-content">
+        <span id="close-popup" class="popup-close">&times;</span>
+        <div id="popup-details"></div>
+      </div>
+    </div>
+
+    <section>
+      <div class="tourists-spots2">
+        <div class="tourists-spots2-container">
+          <!-- Place 4 -->
+          <div class="box4">
+            <div class="box4-img"></div>
+            <div class="box4-texts">
+              <div class="place4-heading"><p>Eden Gardens</p></div>
+              <div class="place4-text">
+                <p>
+                  Famous For: Oldest cricket stadium <br /><br />
+                  Maidan, B.B.D. Bagh, Kolkata
+                  <br /><br />
+                  Open all day
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+          <!-- Place 5 -->
+          <div class="box5">
+            <div class="box5-img"></div>
+            <div class="box5-texts">
+              <div class="place5-heading"><p>St. Paul's Cathedral</p></div>
+              <div class="place5-text">
+                <p>
+                  Famous For: Gothic architecture <br /><br />
+                  Cathedral Rd, Maidan, Kolkata
+                  <br /><br />
+                  9 am to 12 pm, 3 pm to 6 pm
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+          <!-- Place 6 -->
+          <div class="box6">
+            <div class="box6-img"></div>
+            <div class="box6-texts">
+              <div class="place6-heading"><p>Birla Temple</p></div>
+              <div class="place6-text">
+                <p>
+                  Famous For: Remarkable architectural design <br /><br />
+                  29, Ashutosh Chowdary Ave, Ballygunge, Kolkata
+                  <br /><br />
+                  5:30 am to 11 am, 4:30 pm to 9 pm
+                </p>
+              </div>
+            </div>
+            <div class="read-more-btn">
+                <button class="read-more-btn" data-place="1">Visit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-contents"></div>
+    </footer>
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/50fa9ade-dff8-4914-8753-bb2d0008b5ae/webchat/v2.1/config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

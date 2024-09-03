@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-image {
+    background-image: url("aashish-singh-HGX3SRVGPq8-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    z-index: 1000;
+}
+
+.navlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 0 0;
+}
+
+.navlist h1{
+    color: white;
+}
+
+.navlist-seperate{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navlist li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.border:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+
+.nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68vh;
+}
+
+#search{
+    width: 920px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: none;
+    padding-left: 20px;
+}
+
+.search-icon{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.location-brief {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.location-heading p {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.location-desc p {
+    font-size: 1.2rem;
+}
+
+/* Filter State and City */
+.nav-panel {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-panel-options {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.state, .city, .filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/**mouse hover dropdown**/
+/* Dropdown Container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Trigger */
+.dropdown-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 60px; /* Position below the trigger */
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Show Dropdown on Hover */
+.dropdown-container:hover .dropdown-menu {
+    display: block !important;
+}
+
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Menu Items */
+.dropdown-menu li:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 10px;
+}
+
+
+
+/* Tourist Places Section */
+.tourists-spots1-container, .tourists-spots2-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.box1-img, .box2-img, .box3-img, .box4-img, .box5-img, .box6-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1-img {
+    background-image: url('sayan-das-97col-gjrfI-unsplash\ \(1\).jpg');
+}
+
+.box2-img {
+    background-image: url('ankit-manoharan-0HxxztV_FAI-unsplash.jpg');
+}
+
+.box3-img {
+    background-image: url('AAN_1.jpg');
+}
+
+.box4-img {
+    background-image: url('eden-garden-small-new.jpg');
+}
+
+.box5-img {
+    background-image: url('St.Pauls_Cathedral_Church-_Kolkata.jpg');
+}
+
+.box6-img {
+    background-image: url('1200px-Birla_Temple_Kolkata_\(26551471839\).jpg');
+}
+
+.box1-texts, .box2-texts, .box3-texts, .box4-texts, .box5-texts, .box6-texts {
+    padding: 20px;
+}
+
+.place1-heading p, .place2-heading p, .place3-heading p, .place4-heading p, .place5-heading p, .place6-heading p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.place1-text p, .place2-text p, .place3-text p, .place4-text p, .place5-text p, .place6-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.read-more-btn {
+    margin: 10px 0 20px 0;
+}
+
+.read-more-btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Popup Content */
+  .popup-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
+    position: relative;
+  }
+  
+  /* Close Button */
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Popup Content Details */
+  #popup-details{
+    /* Add any specific styles for popup content here */
+  }
+  
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
